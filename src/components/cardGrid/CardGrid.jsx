@@ -31,16 +31,9 @@ function CardGrid({startList, endList}){
         useEffect(()=>{
             getMovie();
 
-            // fetch("https://sneaker-pj-back-end.vercel.app/api/sneakers/all")
-            //     .then(res => res.json())
-            //     .then(data => console.log(data))
-            //     .catch(err => console.error(err));
-
         },[])
         console.log(productList);
-        // let tenProducts = productList.slice(startList, endList);
 
-    // let limitedMovie = movies.slice(0, 10);
 
     return (
         <div className='card-grid'>
@@ -48,7 +41,10 @@ function CardGrid({startList, endList}){
             <Card key={index} 
             id={product.id} 
             title={product.name} 
-            img={product.picture[0].pic1} />
+            img={product.picture[0].pic1}
+            price={product.price}
+            />
+            
         ) )}
         </div>
     )
