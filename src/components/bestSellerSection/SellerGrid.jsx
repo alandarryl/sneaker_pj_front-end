@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 
-import Card from './card/Card';
+import Card from '../card/Card';
 
-import './cardgrid.css';
+import './seller.css';
 
 
 
-function CardGrid({startList, endList}){
+function SellerGrid({startList, endList}){
 
     const [productList, setProduct] = useState([])
     
@@ -40,8 +40,8 @@ function CardGrid({startList, endList}){
         {productList.map((product, index) =>(
             <Card key={index} 
             id={product.id} 
-            title={product.name} 
-            img={product.picture[0].pic1}
+            name={product.name}
+            image={product.picture[0].pic1}
             price={product.price}
             />
             
@@ -50,4 +50,4 @@ function CardGrid({startList, endList}){
     )
 };
 
-export default CardGrid;
+export default SellerGrid;
