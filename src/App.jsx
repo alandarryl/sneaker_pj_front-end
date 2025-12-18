@@ -8,12 +8,16 @@ import CardGrid from './components/cardGrid/CardGrid';
 // limitedLIst props: startList, endList
 import FeaturedSection from './components/featuredSection/FeaturedSection.jsx';
 
+//banner background image issue to fix later
+import Banner from './components/banner/Banner.jsx';
+
 function App() {
 
   return (
     <>
     <Navbar />
       {/* <CardGrid /> */}
+      <Banner />
       <FeaturedSection startList={0} endList={4} />
       <Footer />
     </>

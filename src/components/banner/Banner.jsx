@@ -1,5 +1,5 @@
 
-
+import { useEffect, useState } from "react";
 
 import "./banner.css";
 
@@ -33,8 +33,17 @@ function Banner() {
             },[])
             console.log(productList);
 
+            const bannerProduct = productList[7];
+
     return(
-        <div  className="banner" >
+        <div  className="banner"
+            style={{
+                backgroundImage: `url(${bannerProduct ? bannerProduct.picture[0].pic1 : ''})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+            }}
+        >
             <h2 className="banner-title" >sneaker</h2>
             <p className="banner-subtitle" >best sneaker collection</p>
         </div>
