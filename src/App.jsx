@@ -5,12 +5,16 @@ import Navbar from './components/navbar/Navbar.jsx';
 import Footer from './components/footer/Footer.jsx';
 import CardGrid from './components/cardGrid/CardGrid';
 
+// limitedLIst props: startList, endList
+import FeaturedSection from './components/featuredSection/FeaturedSection.jsx';
+
 function App() {
 
   return (
     <>
     <Navbar />
-      <CardGrid />
+      {/* <CardGrid /> */}
+      <FeaturedSection startList={0} endList={4} />
       <Footer />
     </>
   )

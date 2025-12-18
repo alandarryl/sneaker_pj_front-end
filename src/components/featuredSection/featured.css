@@ -1,0 +1,37 @@
+
+
+.featured-section{
+    padding: 2rem 0;
+    background-color: #f5f5f5;
+}
+
+.featured-section h2{
+    text-align: center;
+    font-size: 5rem;
+    color: #333;
+}
+
+.featured-section p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+/* @media (max-width: 768px) {
+    .card-grid{
+        padding: 1rem auto;
+    }
+} */
