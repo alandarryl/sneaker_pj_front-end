@@ -1,0 +1,63 @@
+
+
+
+.seller-section {
+    margin: 50px 0;
+}
+
+.seller-section h2{
+    text-align: center;
+    font-size: 5rem;
+    color: #333;
+}
+
+.seller-section p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.seller-section .card-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "bigLeftCard bigLeftCard bigLeftCard smallCard1 smallcard2 smallCard3"
+    "bigLeftCard bigLeftCard bigLeftCard smallCard4 smallCard5 smallCard6"
+    ;
+    gap: 2.5rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.card-grid .card-sell:nth-child(1) {
+    grid-area: bigLeftCard;
+}
+
+
+.card-grid .card-sell:nth-child(2){
+    grid-area: smallCard1;
+}
+
+.card-grid .card-sell:nth-child(3){
+    grid-area: smallCard2;
+}
+
+.card-grid .card-sell:nth-child(4){
+    grid-area: smallCard3;
+}
+
+.card-grid .card-sell:nth-child(5){
+    grid-area: smallCard4;
+}
+
+.card-grid .card-sell:nth-child(6){
+    grid-area: smallCard5;
+}
+
+.card-grid .card-sell:nth-child(7){
+    grid-area: smallCard6;
+}

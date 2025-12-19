@@ -31,7 +31,7 @@ function Banner() {
                 getItems();
     
             },[])
-            console.log(productList);
+            // console.log(productList);
 
             const bannerProduct = productList[7];
 
