@@ -1,0 +1,30 @@
+.card-skeleton {
+  padding: 1rem;
+  border-radius: 12px;
+  background: #f2f2f2;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-img {
+  height: 160px;
+  background: #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.skeleton-text {
+  height: 16px;
+  background: #ddd;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.skeleton-text.small {
+  width: 60%;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}

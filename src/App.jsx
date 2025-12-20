@@ -11,6 +11,10 @@ import FeaturedSection from './components/featuredSection/FeaturedSection.jsx';
 //banner background image issue to fix later
 import Banner from './components/banner/Banner.jsx';
 
+//seller section
+import SellerSection from './components/bestSellerSection/SellerSection.jsx';
+
+
 function App() {
 
   return (
@@ -19,6 +23,7 @@ function App() {
       {/* <CardGrid /> */}
       <Banner />
       <FeaturedSection startList={0} endList={4} />
+      <SellerSection />
       <Footer />
     </>
   )
