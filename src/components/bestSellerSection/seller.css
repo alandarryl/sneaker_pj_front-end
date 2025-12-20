@@ -1,0 +1,78 @@
+
+
+
+
+
+/* .card-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    background-color: red;
+} */
+
+.seller-section{
+    /* background-color: red; */
+    text-align: center;
+}
+
+.seller-section h2{
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.seller-section p{
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* .seller-section .card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.seller-section .card-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "left-card right-card"
+    "left-card right-card";
+    gap: 2rem;
+    padding: 1rem;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.seller-section .left-card{
+    grid-area: left-card;
+}
+
+.seller-section .right-card{
+    grid-area: right-card;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .seller-section .card-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "left-card"
+        "right-card"
+        "right-card";
+    }
+
+    .seller-section .right-card{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}

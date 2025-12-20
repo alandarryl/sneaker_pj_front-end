@@ -46,6 +46,7 @@ function SellerSection() {
           price={leftCard.price}
         />
 
+        <div className="right-card" >
         {limitedList.map((product) => (
           <Card
             className="right-card"
@@ -56,6 +57,8 @@ function SellerSection() {
             price={product.price}
           />
         ))}
+        </div>
+
       </div>
     </div>
   );
