@@ -36,7 +36,7 @@ function SellerSection({startList, endList}){
         // console.log(productList);
 
         const leftCard = productList[0];
-        const limitedList = productList.slice(1, 7);
+        // const limitedList = productList.slice(1, 7);
 
 
     return (
@@ -45,14 +45,14 @@ function SellerSection({startList, endList}){
             <h2> best seller  </h2>
             <p> Products </p>
             <div className='card-grid'>
-                    {/* <Card className="left-card" key={index} 
+                    <Card className="left-card"
                     id={leftCard.id} 
                     title={leftCard.name} 
                     img={leftCard.picture[0].pic1}
                     price={leftCard.price}
-                    /> */}
+                    />
 
-                {limitedList.map((product, index) =>(
+                {/* {limitedList.map((product, index) =>(
                     <Card className="right-card" key={index} 
                     id={product.id} 
                     title={product.name} 
@@ -60,7 +60,7 @@ function SellerSection({startList, endList}){
                     price={product.price}
                     />
                     
-                ) )}
+                ) )} */}
             </div>
         </div>
 
