@@ -5,33 +5,56 @@
     height: 700px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     padding: 15px;
-    /* justify-content: center; */
     gap: 18px;
     background-color: red;
 }
 
-/* .detail-container .image-side{
+.detail-container .image-side{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px 100px;
-    grid-template-areas: 
-    "main"
-    "second"
-    ;
+    grid-template-rows: 1fr 1fr;
 }
 
-.detail-container .image-side .primary-image{
+/* .image-side .primary-image{
     grid-area: main;
-    width: 300px;
-    height: 300px;
+} */
+
+.image-side .primary-image .main{
+    width: 100%;
+    object-fit: cover;
 }
 
-.detail-container .image-side .secondary-image{
-    grid-area: second;
+.image-side .secondary-image{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-} */
+    grid-template-areas: 
+    "first second third"
+    ;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.image-side .secondary-image .first{
+    grid-area: first;
+}
+
+.secondary-image .first,
+.secondary-image .second,
+.secondary-image .third{
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-side .secondary-image .second{
+    grid-area: second;
+}
+
+.image-side .secondary-image .third{
+    grid-area: third;
+}
+
+
+
 
 
