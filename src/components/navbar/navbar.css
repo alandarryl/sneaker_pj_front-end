@@ -16,6 +16,10 @@
     font-weight: bold;
 }
 
+.navbar .logo:hover{
+    cursor: pointer;
+}
+
 .icons{
     display: flex;
     gap: 15px;

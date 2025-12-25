@@ -35,7 +35,7 @@ function DetailCard({productList, loading, error}) {
                 <p>Stock: {product?.stock}</p>
                 <span>Rating: {product?.avis?.stars} ⭐</span>
                 <a href="#" className='btn' >Add to Cart</a>
-                {/* <p>Description: {product?.content}</p> */}
+                <p>Description: {product?.content}</p>
             </div>
         </div>
 

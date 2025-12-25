@@ -7,7 +7,7 @@ import DetailCard from '../components/detailCard/DetailCard';
 
 function DetailPage() {  
 
-    const id = 1;
+    const id = 6;
 
 
 const {
