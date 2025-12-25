@@ -22,20 +22,20 @@ function DetailCard({productList, loading, error}) {
                 </div>
             </div>
             <div className='text-side' >
-                <h2>{product?.name}</h2>
-                <p>Price: {product?.price}</p>
-                <p>Brand: {product?.brand}</p>
+                <h2 className="title" >{product?.name}</h2>
+                <p className="price" >Price: <span>{product?.price}</span> $</p>
+                <p className="brand" >Brand: <span>{product?.brand}</span></p>
                 <select  name="size" id="size-select" >
                     <option value="">Select Size</option>
                     {product?.size?.map((size, index) => (
                         <option key={index} value={size}>{size}</option>
                     ))}
                 </select>
-                <p>Category: {product?.category}</p>
-                <p>Stock: {product?.stock}</p>
-                <span>Rating: {product?.avis?.stars} ⭐</span>
+                <p className="category" >Category: <span>{product?.category}</span></p>
+                <p className="stock" >Stock: <span>{product?.stock}</span></p>
+                <p className="rating" >Rating: {product?.avis?.stars} ⭐ ({product?.avis?.nb} Avis) </p>
                 <a href="#" className='btn' >Add to Cart</a>
-                <p>Description: {product?.content}</p>
+                <p className="description" > {product?.content}</p>
             </div>
         </div>
 
