@@ -17,7 +17,7 @@
 .detail-container .image-side{
     display: grid;
     /* grid-template-rows: 1fr 1fr; */
-    grid-template-rows: 450px auto;
+    grid-template-rows: 450px 150px;
     grid-template-areas: 
     "main"
     "secondary"

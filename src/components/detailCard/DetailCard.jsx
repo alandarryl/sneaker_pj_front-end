@@ -16,9 +16,15 @@ function DetailCard({productList, loading, error}) {
                     <img className="main" src={product?.picture?.[0]?.pic1} alt="Product Image" />
                 </div>
                 <div className='secondary-image' >
-                    <img className="first" src={product?.picture?.[0]?.pic2} alt="Product Image" />
-                    <img className="second" src={product?.picture?.[0]?.pic3} alt="Product Image" />
-                    <img className="third" src={product?.picture?.[0]?.pic4} alt="Product Image" />
+                    <div className="image-card" >
+                        <img className="first" src={product?.picture?.[0]?.pic2} alt="Product Image" />
+                    </div>
+                    <div className="image-card" >
+                        <img className="second" src={product?.picture?.[0]?.pic3} alt="Product Image" />
+                    </div>
+                    <div className="image-card" >
+                        <img className="third" src={product?.picture?.[0]?.pic4} alt="Product Image" />
+                    </div>
                 </div>
             </div>
             <div className='text-side' >
